@@ -22,13 +22,14 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dungeon Dice!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t1-od-zFr">
                                         <rect key="frame" x="8" y="49" width="359" height="47"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="29"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01a-OR-qKt">
                                         <rect key="frame" x="8" y="202" width="352" height="59"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="1" green="0.96384602649999995" blue="0.94245736970000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -36,21 +37,94 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a dice to roll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aE-8k-x2R">
                                         <rect key="frame" x="8" y="136" width="352" height="46"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-gV-jFi">
-                                        <rect key="frame" x="128" y="283" width="113" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-gV-jFi">
+                                        <rect key="frame" x="11" y="346" width="86" height="34"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="4-Sided"/>
                                         <connections>
                                             <action selector="FourSidedDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pmU-It-Fbb"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf1-OX-JCc">
+                                        <rect key="frame" x="129" y="276" width="116" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdR-1K-hdX">
+                                        <rect key="frame" x="280.33333333333331" y="344" width="83.666666666666686" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="6-sided"/>
+                                        <connections>
+                                            <action selector="SixSidedDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DpX-iu-X3T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCp-ol-yfo">
+                                        <rect key="frame" x="11" y="423" width="83.666666666666671" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="8-sided"/>
+                                        <connections>
+                                            <action selector="EightSidedDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAq-bs-89D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzx-CZ-FdO">
+                                        <rect key="frame" x="273" y="422" width="91" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="10-sided"/>
+                                        <connections>
+                                            <action selector="TenSidedDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AVB-Tw-2zg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZT-wk-9RT">
+                                        <rect key="frame" x="11" y="492" width="90.666666666666671" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="12-sided"/>
+                                        <connections>
+                                            <action selector="TwelveSidedDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWu-fb-TSy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWK-A9-sXa">
+                                        <rect key="frame" x="270.66666666666669" y="492" width="93.333333333333314" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="20-sided"/>
+                                        <connections>
+                                            <action selector="TwentySidedDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zD4-fx-yO5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNo-OD-gZV">
+                                        <rect key="frame" x="121" y="537" width="132" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="100-sided !"/>
+                                        <connections>
+                                            <action selector="HundredSidedDice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4E-cj-uaL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pzx-CZ-FdO" secondAttribute="trailing" constant="11" id="1mR-qo-h7Q"/>
+                                    <constraint firstItem="QCp-ol-yfo" firstAttribute="top" secondItem="vbe-wP-Cbl" secondAttribute="top" constant="423" id="9pW-mN-lPR"/>
+                                    <constraint firstItem="QCp-ol-yfo" firstAttribute="leading" secondItem="vbe-wP-Cbl" secondAttribute="leading" constant="11" id="APG-B0-vIa"/>
+                                    <constraint firstItem="QCp-ol-yfo" firstAttribute="leading" secondItem="vbe-wP-Cbl" secondAttribute="leading" constant="11" id="CUY-uF-Zjk"/>
+                                    <constraint firstAttribute="trailing" secondItem="AdR-1K-hdX" secondAttribute="trailing" constant="11" id="KSY-ML-Bn8"/>
+                                    <constraint firstItem="pzx-CZ-FdO" firstAttribute="top" secondItem="vbe-wP-Cbl" secondAttribute="top" constant="422" id="QGl-Lz-W9D"/>
+                                    <constraint firstItem="2ZT-wk-9RT" firstAttribute="top" secondItem="vbe-wP-Cbl" secondAttribute="top" constant="492" id="R30-5w-gbb"/>
+                                    <constraint firstItem="2ZT-wk-9RT" firstAttribute="leading" secondItem="vbe-wP-Cbl" secondAttribute="leading" constant="11" id="Ugi-HS-Tpq"/>
+                                    <constraint firstItem="AdR-1K-hdX" firstAttribute="top" secondItem="vbe-wP-Cbl" secondAttribute="top" constant="344" id="YaQ-aF-6g3"/>
+                                    <constraint firstAttribute="trailing" secondItem="kWK-A9-sXa" secondAttribute="trailing" constant="11" id="cY0-6l-EsT"/>
+                                    <constraint firstItem="2ZT-wk-9RT" firstAttribute="top" secondItem="vbe-wP-Cbl" secondAttribute="top" constant="492" id="gMt-sb-UOC"/>
+                                    <constraint firstItem="vgN-gV-jFi" firstAttribute="top" secondItem="vbe-wP-Cbl" secondAttribute="top" constant="346" id="gWC-uB-6Ym"/>
+                                    <constraint firstItem="QCp-ol-yfo" firstAttribute="top" secondItem="vbe-wP-Cbl" secondAttribute="top" constant="423" id="jNz-ps-zCm"/>
+                                    <constraint firstItem="2ZT-wk-9RT" firstAttribute="leading" secondItem="vbe-wP-Cbl" secondAttribute="leading" constant="11" id="tJ2-CI-E21"/>
+                                    <constraint firstItem="vgN-gV-jFi" firstAttribute="leading" secondItem="vbe-wP-Cbl" secondAttribute="leading" constant="11" id="tya-Ng-MYO"/>
+                                    <constraint firstItem="kWK-A9-sXa" firstAttribute="top" secondItem="vbe-wP-Cbl" secondAttribute="top" constant="492" id="w0y-Q9-n2T"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,6 +140,7 @@
                         <outlet property="ChooseDiceLabel" destination="2aE-8k-x2R" id="NOL-g5-62m"/>
                         <outlet property="DungeonDiceLabel" destination="3t1-od-zFr" id="OWG-gn-EeX"/>
                         <outlet property="ResultsLabel" destination="01a-OR-qKt" id="a7W-wp-B8g"/>
+                        <outlet property="ResultsLabel2" destination="Gf1-OX-JCc" id="K7K-96-8MO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,6 +151,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
