@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //printContent("image did load")
+        print("image did load")
         ResultsLabel.text = ""
         ResultsLabel2.text = ""
         
